@@ -1,25 +1,17 @@
 # SIEM Log Monitor (Python)
 
-A lightweight security log analysis tool written in Python that detects suspicious activities such as brute-force login attempts, SQL injection patterns, and access to sensitive endpoints.
-
-This project demonstrates practical blue-team cybersecurity skills including log parsing, threat detection, and automated report generation.
-
+A Python-based cybersecurity utility designed to inspect system and application log files to identify indicators of malicious activity.
+This project demonstrates practical defensive security techniques including threat detection logic, event correlation, pattern matching, and automated reporting.
 
 
-## Overview
+## Project Overview
 
-Modern systems generate large volumes of logs. Manually reviewing them is inefficient and error-prone.
+Modern computing environments generate extensive logs that contain valuable forensic evidence of security incidents.
+Manually analyzing these logs is inefficient and error-prone.
 
-This tool automates the process by:
+This project introduces an automated approach to log inspection by parsing event records and identifying patterns commonly associated with cyberattacks such as brute-force attempts, injection activity, and unauthorized access.
 
-* Parsing security log files
-* Detecting repeated failed login attempts (possible brute-force attack)
-* Identifying SQL injection patterns
-* Flagging access to sensitive endpoints
-* Generating a structured security report
-
-The analyzer is built using only Python standard libraries, making it portable and easy to run on any system.
-
+The tool was developed to simulate real-world tasks performed by Security Operations Center (SOC) analysts.
 
 
 ## Key Features
@@ -114,52 +106,47 @@ to match real-world environments.
 
 
 
-## Detection Logic
+## Performance Considerations
 
-The analyzer performs:
+The analyzer is optimized for sequential log processing and can handle moderately large datasets efficiently.
+Performance may vary depending on log size and pattern complexity.
 
-1. Line-by-line parsing of logs
-2.	Regex-based pattern detection
-3.	IP extraction
-4.	Event classification
-5.	Structured report generation
+Potential optimizations include:
 
-This simulates how SOC analysts triage alerts during incident response.
-
-
+* Streaming analysis pipelines
+* Multiprocessing for large-scale datasets
+* Integration with real-time log feeds
 
 ## Security & Ethical Use
 
-This tool is intended strictly for:
+This tool is intended for:
 
 * Cybersecurity education
-* Security lab environments
-* Defensive research
+* Incident response simulations
 * Authorized log auditing
+* Defensive research activities
 
-Do NOT use on systems or logs without proper permission.
+Unauthorized analysis of sensitive operational logs may violate privacy or regulatory policies.
 
 
+## Learning Outcomes
 
-## Learning Objectives
+Developing this project strengthens understanding of:
 
-This project demonstrates:
+* Event correlation techniques
+* Intrusion detection logic
+* Pattern-based threat identification
+* Security monitoring workflows
+* Automation of defensive analysis tasks
 
-* Log parsing techniques
-* Regular expression pattern detection
-* Basic threat intelligence concepts
-* Incident reporting automation
-* Defensive cybersecurity scripting
 
 
 ## Author
 
-Developed as a cybersecurity learning project to demonstrate practical defensive security automation using Python.
-
+This project was created as part of a cybersecurity learning portfolio to gain hands-on experience in defensive security tooling and incident investigation methodologies.
 
 
 ## License
 
-Educational use only.
-
-Use responsibly in authorized environments.
+Provided for educational and research purposes.
+Users are encouraged to adapt and extend the analyzer within controlled and authorized environments.
