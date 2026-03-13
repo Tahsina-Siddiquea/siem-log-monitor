@@ -51,7 +51,7 @@ Report is saved automatically as: `security_report.txt`
 
 ## Project Structure
 ```
-log-analyzer/
+log-monitor/
 │
 ├── log_analyzer.py      # Main analyzer script
 ├── sample_log.txt       # Example log file for testing
